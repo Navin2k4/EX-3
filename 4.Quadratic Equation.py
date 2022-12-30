@@ -1,0 +1,20 @@
+a=int(input("Enter the coefficient of a : "))
+b=float(input("Enter the coefficient of b : "))
+c=int(input("Enter the coefficient of c : "))
+det=(pow(b,2))-(4*a*c)
+d1=pow(det,2)
+d2=pow(det,2)
+if(det>0):                                 # Example equation x^2 + 3x + 2 = 0 answers is -1 and -2
+    root1=((-b)+pow(d1,0.5))/(2*a)
+    root2=((-b)-pow(d1,0.5))/(2*a)
+    print(int(root1)," ",int(root2))
+elif(det<0):                               # Example equation x^2 + 4x + 5 = 0 answers is -2 +- i
+    w=-b/(2*a)
+    x=((-b)+pow(d1,0.5))/(2*a)
+    y=-b/(2*a)
+    z=((-b)+pow(d1,0.5))/(2*a)
+    print(str(int(w)) + " + i" + str(int(x)))
+    print(str(int(y)) + " - i" + str(int(z)))
+else:
+    root=-b/(2*a)
+    print(int(root))
