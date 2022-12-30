@@ -5,10 +5,12 @@ det=(pow(b,2))-(4*a*c)
 d1=pow(det,2)
 d2=pow(det,2)
 if(det>0):                                 # Example equation x^2 + 3x + 2 = 0 answers is -1 and -2
+    print("The roots are Real and Equal")
     root1=((-b)+pow(d1,0.5))/(2*a)
     root2=((-b)-pow(d1,0.5))/(2*a)
     print(int(root1)," ",int(root2))
 elif(det<0):                               # Example equation x^2 + 4x + 5 = 0 answers is -2 +- i
+    print("They are complex Roots")
     w=-b/(2*a)
     x=((-b)+pow(d1,0.5))/(2*a)
     y=-b/(2*a)
@@ -16,5 +18,6 @@ elif(det<0):                               # Example equation x^2 + 4x + 5 = 0 a
     print(str(int(w)) + " + i" + str(int(x)))
     print(str(int(y)) + " - i" + str(int(z)))
 else:
+    print("Enter correct roots")
     root=-b/(2*a)
     print(int(root))
